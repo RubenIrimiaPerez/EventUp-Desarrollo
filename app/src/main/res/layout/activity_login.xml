@@ -105,12 +105,13 @@
         app:layout_constraintGuide_begin="505dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Credenciales"
         android:layout_width="163dp"
         android:layout_height="29dp"
         android:layout_marginTop="5sp"
         android:padding="@dimen/cardview_default_radius"
         android:text="Olvide mis credenciales"
+        android:onClick="AlertDialog"
         android:textAlignment="center"
         android:textColor="@color/pino_oscuro"
         android:textStyle="bold"
