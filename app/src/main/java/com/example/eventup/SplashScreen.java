@@ -25,18 +25,16 @@ public class SplashScreen extends AppCompatActivity {
         ImageView logoSplash = findViewById(R.id.logoSplash);
         TextView appNameSplash = findViewById(R.id.appNameSplash);
 
+        Animation zoomAnimation = AnimationUtils.loadAnimation(this, R.anim.zoom);
+        logoSplash.startAnimation(zoomAnimation);
+
         Animation fadeAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
         appNameSplash.startAnimation(fadeAnimation);
 
         Animation shakeAnimation = AnimationUtils.loadAnimation(this, R.anim.shake);
-        logoSplash.startAnimation(shakeAnimation);
+        appNameSplash.startAnimation(shakeAnimation);
 
-        ImageView background = findViewById(R.id.backgroundSplash);
-        Glide.with(this)
-                .load("https://images.unsplash.com/photo-1565035010268-a3816f98589a?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-                .transition(DrawableTransitionOptions.withCrossFade(2000))
-                .centerCrop()
-                .into(background);
+
     }
 
     public void openLogin(){
