@@ -23,7 +23,7 @@ public class Login extends AppCompatActivity {
 
         EditText nuevaContraeña = new EditText(this);
         nuevaContraeña.setInputType(InputType.TYPE_CLASS_TEXT);
-        nuevaContraeña.setHint("nuevamail@example.com");
+        nuevaContraeña.setHint("nuevo e-mail@example.com");
 
         builder.setView(nuevaContraeña);
         builder.setTitle("Ingrese el e-mail para poder reestablecer contraseña");

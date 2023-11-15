@@ -13,7 +13,8 @@
         android:layout_height="match_parent"
         android:alpha="0.5"
         android:background="@drawable/gradient"
-        tools:layout_editor_absoluteY="418dp" />
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
         android:id="@+id/logoLogin"
@@ -40,11 +41,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/usernameInputLogin"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/v2"
+        app:layout_constraintStart_toStartOf="@+id/v1"
         app:layout_constraintTop_toBottomOf="@id/appNameLogin"
         app:startIconDrawable="@drawable/ic_persona">
 
@@ -59,11 +60,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordInputLogin"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/v2"
+        app:layout_constraintStart_toStartOf="@+id/v1"
         app:layout_constraintTop_toBottomOf="@id/usernameInputLogin"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_llave">
@@ -109,11 +110,11 @@
         android:layout_width="163dp"
         android:layout_height="29dp"
         android:layout_marginTop="5sp"
+        android:onClick="AlertDialog"
         android:padding="@dimen/cardview_default_radius"
         android:text="Olvide mis credenciales"
-        android:onClick="AlertDialog"
         android:textAlignment="center"
-        android:textColor="@color/pino_oscuro"
+        android:textColor="@color/md_theme_dark_errorContainer"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -168,5 +169,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
