@@ -6,13 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
 
-    <View
-        android:id="@+id/gradientSplash"
+    <ImageView
+        android:id="@+id/backgroundSplash"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.5"
-        android:background="@drawable/gradient" />
-
+        android:layout_height="match_parent" />
     <ImageView
         android:id="@+id/logoSplash"
         android:layout_width="150dp"

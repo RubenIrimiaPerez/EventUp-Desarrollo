@@ -135,9 +135,11 @@
         android:layout_width="148dp"
         android:layout_height="55dp"
         android:backgroundTint="@color/md_theme_light_onSurfaceVariant"
+        android:onClick="changeToRegistro"
         android:text="Registrarse"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
